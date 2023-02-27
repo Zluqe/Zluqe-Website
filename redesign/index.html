@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
         <link rel="apple-touch-icon" sizes="180x180" href="https://panel.zluqe.com/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="https://panel.zluqe.com/favicons/favicon-32x32.png" sizes="32x32">
@@ -15,39 +16,51 @@
     </head>
     <body>
         <header class="primary-header">
-            <nav class="navbar container">
-                <a href="/#" class="logo">Zluqe</a>
-                <ul class="nav-list">
-                    <li>
-                        <a href="/#" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#pricing" class="nav-link">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#langs" class="nav-link">Languages</a>
-                    </li>
-                    <li>
-                        <a href="#reviews" class="nav-link">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#faq" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-                <a href="#" class="button">Get Started</a>
+            <nav class="navbar navbar-dark container navbar-expand-lg">
+                <a href="/#" class="logo navbar-brand"><p>Zluqe</p> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>             
+                <div class="collapse nitem navbar-collapse" id="navbarNav">
+                    <ul class="nav-list navbar-nav ">
+                        <li class="nav-item">
+                            <a href="/#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link">Pricing</a>
+                        </li class="nav-item">
+                        <li class="nav-item">
+                            <a href="#langs" class="nav-link">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reviews" class="nav-link">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                        
+                    </ul>
+                    <a href="#" class="d-flex button">Get Started</a>
+                    &nbsp;
+                </div> 
             </nav>
         </header>
-
         <section class="hero"><p>Free Bot Hosting</p></section>
         <section class="demo-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quis earum, facilis, nemo commodi ullam harum quam dolore voluptatibus laboriosam in repellendus, unde minus repudiandae obcaecati eum non libero! Harum.</section>
 
         <script>
             const isScrolling = () => {
                 const headerEl = document.querySelector('.primary-header')
+                const navItems = document.querySelector('.nitem')
                 let windowPosition = window.scrollY > 670
                 headerEl.classList.toggle('active', windowPosition)
+                navItems.classList.toggle('active', windowPosition)
+                
             }
             window.addEventListener('scroll', isScrolling)
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
