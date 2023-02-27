@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://panel.zluqe.com/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="https://panel.zluqe.com/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://panel.zluqe.com/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="https://panel.zluqe.com/favicons/manifest.json">
+        <link rel="mask-icon" href="https://panel.zluqe.com/favicons/safari-pinned-tab.svg" color="#bc6e3c">
+        <link rel="shortcut icon" href="https://panel.zluqe.com/favicons/favicon.ico">
+        <title>Zluqe | Free bot hosting</title>
+    </head>
+    <body>
+        <header class="primary-header">
+            <nav class="navbar container">
+                <a href="/#" class="logo">Zluqe</a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="/#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#langs" class="nav-link">Languages</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="nav-link">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                </ul>
+                <a href="#" class="button">Get Started</a>
+            </nav>
+        </header>
+
+        <section class="hero"><p>Free Bot Hosting</p></section>
+        <section class="demo-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quis earum, facilis, nemo commodi ullam harum quam dolore voluptatibus laboriosam in repellendus, unde minus repudiandae obcaecati eum non libero! Harum.</section>
+
+        <script>
+            const isScrolling = () => {
+                const headerEl = document.querySelector('.primary-header')
+                let windowPosition = window.scrollY > 670
+                headerEl.classList.toggle('active', windowPosition)
+            }
+            window.addEventListener('scroll', isScrolling)
+        </script>
+    </body>
+</html>
