@@ -146,14 +146,13 @@ header.active .button:hover {
 }
 
 /* footer */
-.site-footer {
+/* .site-footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 3rem 0;
     margin-top: 3rem;
     position: absolute !important;
     bottom: 0px;
-    padding-left: 1rem;
   }
   
   .site-footer h2,
@@ -219,4 +218,4 @@ header.active .button:hover {
       left: 0;
       right: 0;
     }
-  }
+  } */
