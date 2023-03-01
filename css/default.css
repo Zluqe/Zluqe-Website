@@ -7852,3 +7852,32 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .switcher-wrap {
     display: none; } }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #546E7A;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 7px;
+}
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #263238;
+    }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    padding-top: 18px;
+    background-color: #11171a;
+    display: none;
+    overflow: hidden;
+    border-radius: 7px;
+}
