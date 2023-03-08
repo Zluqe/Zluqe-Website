@@ -1,3 +1,6 @@
+:root {
+  --accent: #6B1295;
+}
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +27,17 @@ a {
 }
 .font-normal {
   font-size: 13pt;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+.hover-underline-white:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+#top-divider {
+  transform: translateY(-100%);
 }
 /* End general styles */
 .primary-header {
@@ -81,7 +95,8 @@ a {
     transition: background-color 0.25s;
 }
 .button:hover {
-    background-color: #d3d3d3;
+    background-color: var(--accent);
+    color: #fff;
 }
 header.active {
     background-color: #000;
@@ -102,17 +117,18 @@ header.active .nav-link:hover {
     color: #808080;
 }
 header.active .button {
-    background-color: #313131;
-    color: #fff;
+    color: #313131;
+    background-color: #fff;
 }
 header.active .button:hover {
-    background-color: #151515;
+    background-color: var(--accent);
+    color: #fff;
 }
 
 /* Hero Demo Content*/
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     /* background: url('https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9') center no-repeat; */
     background: url('https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80') center no-repeat;
     background-size: cover;
@@ -165,7 +181,20 @@ header.active .button:hover {
   grid-row-gap: 20px;
   max-width: 70%;
   margin-left: 15%;
-  }
+}
+#pricing {
+  background-color: var(--accent);
+}
+#pricing-container {
+  transform: translateY(-30%);
+}
+/* these two are really important, if you remove them there's these really annoying 1px gaps for some strange reason */
+#pricing-divider-top {
+  transform: translateY(1px);
+}
+#pricing-divider-bottom {
+  transform: translateY(-1px);
+}
   
   .pricing-div1 { grid-area: 1 / 1 / 2 / 2; }
   .pricing-div2 { grid-area: 1 / 2 / 2 / 3; }
@@ -175,8 +204,8 @@ header.active .button:hover {
   .pricing-div6 { grid-area: 3 / 2 / 4 / 3; }
 /* features */
 #features {
-  background: #6B1295;
   min-height: 300px;
+  transform: translateY(-100%);
 }
 .features-parent {
   display: grid;
@@ -190,7 +219,7 @@ header.active .button:hover {
   .features-div2 { grid-area: 1 / 2 / 2 / 3; }
   .features-div3 { grid-area: 2 / 1 / 3 / 2; }
   .features-div4 { grid-area: 2 / 2 / 3 / 3; }
-  
+
 /* footer */
 /* .site-footer {
     background-color: rgba(0, 0, 0, 0.8);
