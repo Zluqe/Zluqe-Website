@@ -172,8 +172,8 @@ header.active .button:hover {
     outline: none;
     box-shadow: none;
 }
-/* pricing grid */
-.pricing-parent {
+/* faq grid */
+.faq-parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -182,26 +182,26 @@ header.active .button:hover {
   max-width: 70%;
   margin-left: 15%;
 }
-#pricing {
+#faq {
   background-color: var(--accent);
 }
-#pricing-container {
+#faq-container {
   transform: translateY(-30%);
 }
 /* these two are really important, if you remove them there's these really annoying 1px gaps for some strange reason */
-#pricing-divider-top {
+#faq-divider-top {
   transform: translateY(1px);
 }
-#pricing-divider-bottom {
+#faq-divider-bottom {
   transform: translateY(-1px);
 }
   
-  .pricing-div1 { grid-area: 1 / 1 / 2 / 2; }
-  .pricing-div2 { grid-area: 1 / 2 / 2 / 3; }
-  .pricing-div3 { grid-area: 2 / 1 / 3 / 2; }
-  .pricing-div4 { grid-area: 2 / 2 / 3 / 3; }
-  .pricing-div5 { grid-area: 3 / 1 / 4 / 2; }
-  .pricing-div6 { grid-area: 3 / 2 / 4 / 3; }
+  .faq-div1 { grid-area: 1 / 1 / 2 / 2; }
+  .faq-div2 { grid-area: 1 / 2 / 2 / 3; }
+  .faq-div3 { grid-area: 2 / 1 / 3 / 2; }
+  .faq-div4 { grid-area: 2 / 2 / 3 / 3; }
+  .faq-div5 { grid-area: 3 / 1 / 4 / 2; }
+  .faq-div6 { grid-area: 3 / 2 / 4 / 3; }
 /* features */
 #features {
   min-height: 300px;
@@ -219,7 +219,19 @@ header.active .button:hover {
   .features-div2 { grid-area: 1 / 2 / 2 / 3; }
   .features-div3 { grid-area: 2 / 1 / 3 / 2; }
   .features-div4 { grid-area: 2 / 2 / 3 / 3; }
-
+/* pricing */
+.pricing-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+  
+  .pricing-div1 { grid-area: 1 / 1 / 2 / 2; }
+  .pricing-div2 { grid-area: 1 / 2 / 2 / 3; }
+  .pricing-div3 { grid-area: 1 / 3 / 2 / 4; }
+  
 /* footer */
 /* .site-footer {
     background-color: rgba(0, 0, 0, 0.8);
