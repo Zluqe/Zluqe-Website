@@ -17,6 +17,9 @@
         <title>Zluqe | Free bot hosting</title>
     </head>
     <body>
+      <button type="button" class="btn shadow rounded-circle-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
         <header class="primary-header">
             <nav class="navbar navbar-dark container navbar-expand-lg">
                 <a href="/#" class="logo navbar-brand"><p>Zluqe</p> </a>
@@ -204,7 +207,7 @@
       <div class="col mb-3">
         <ul class="nav flex-column">
             <h5>Important</h5>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-underline-white">Terms of Service</a></li>
+          <li class="nav-item mb-2"><a href="tos.html" class="nav-link p-0 text-muted hover-underline-white">Terms of Service</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-underline-white">Privacy Policy</a></li>
         </ul>
       </div>
@@ -239,12 +242,39 @@
                 
             }
             window.addEventListener('scroll', isScrolling)
+            //Get the button
+            let btntotop = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 50px from the top of the document, show the button
+            window.onscroll = function () {
+              scrollFunction();
+            };
+
+            function scrollFunction() {
+              if (
+                document.body.scrollTop > 50 ||
+                document.documentElement.scrollTop > 50
+              ) {
+                btntotop.style.display = "block";
+              } else {
+                btntotop.style.display = "none";
+              }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            btntotop.addEventListener("click", backToTop);
+
+            function backToTop() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <style>
           :root {
             --accent: #6B1295;
+            --accent-dark:#560e77;
           }
+          
           * {
               margin: 0;
               padding: 0;
@@ -547,19 +577,29 @@
             .testimonials .card {
               background-color: #313131 !important; 
               border: none;
-              border-bottom: 3px #560e77 solid !important;
+              border-bottom: 3px var(--accent-dark) solid !important;
               transition: 0.5s;
               margin-top: 60px;
             }
             .testimonials .card i {
-              background-color: #560e77;
+              background-color: var(--accent-dark);
               color: #ffffff;
               width: 75px;
               height: 75px;
               line-height: 75px;
               margin: -40px auto 0 auto;
             }
-
+            #btn-back-to-top {
+              border-radius: 100% !important;
+              color:white;
+              background-color: var(--accent-dark) !important;
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              transition: all 0.5s;
+              display: none;
+              z-index: 99999;
+            }
         </style>
     </body>
 </html>

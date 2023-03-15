@@ -327,3 +327,14 @@ header.active .button:hover {
     line-height: 75px;
     margin: -40px auto 0 auto;
   }
+  #btn-back-to-top {
+    border-radius: 100% !important;
+    color:white;
+    background-color: #560e77 !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.5s;
+    display: none;
+    z-index: 99999;
+  }
