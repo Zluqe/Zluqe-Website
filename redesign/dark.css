@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     color: #fff;
-    background: #151515;
+    background: #151515 !important;
 }
 a {
     text-decoration: none;
@@ -107,7 +107,7 @@ header.active {
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 header.active .navbar {
-  height: 6rem;
+  height: 7.5rem;
 }
 header.active .logo,
 header.active .nav-link {
@@ -184,6 +184,7 @@ header.active .button:hover {
 }
 #faq {
   background-color: var(--accent);
+  color: white;
 }
 #faq-container {
   transform: translateY(-30%);
@@ -204,8 +205,7 @@ header.active .button:hover {
   .faq-div6 { grid-area: 3 / 2 / 4 / 3; }
 /* features */
 #features {
-  min-height: 300px;
-  transform: translateY(-100%);
+  transform: translateY(-15rem);
 }
 .features-parent {
   display: grid;
@@ -232,80 +232,6 @@ header.active .button:hover {
   .pricing-div2 { grid-area: 1 / 2 / 2 / 3; }
   .pricing-div3 { grid-area: 1 / 3 / 2 / 4; }
   
-/* footer */
-/* .site-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 3rem 0;
-    margin-top: 3rem;
-    position: absolute !important;
-    bottom: 0px;
-  }
-  
-  .site-footer h2,
-  .site-footer h3 {
-    color: #fff;
-  }
-  
-  .site-footer p {
-    color: #fff;
-    opacity: 0.8;
-  }
-  
-  .site-footer hr {
-    border-color: rgba(255, 255, 255, 0.1);
-    margin: 2rem 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 1rem;
-  }
-  
-  .footer-links a {
-    color: #fff;
-    opacity: 0.8;
-  }
-  
-  .footer-links a:hover {
-    opacity: 1;
-  }
-  
-  .footer-social-links li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  .footer-social-links a {
-    color: #fff;
-    opacity: 0.8;
-  }
-  
-  .footer-social-links a:hover {
-    opacity: 1;
-  }
-  
-  @media (max-width: 767px) {
-    .site-footer .container {
-      margin-bottom: 2rem;
-    }
-  
-    .site-footer h3 {
-      margin-top: 2rem;
-    }
-  
-    .footer-links {
-      margin-bottom: 2rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .site-footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  } */
   .testimonials {
     padding: 100px 0;
   }
@@ -338,3 +264,31 @@ header.active .button:hover {
     display: none;
     z-index: 99999;
   }
+  #top-divider {
+    fill: #151515;
+  }
+  #faq-divider-top {
+    fill: var(--accent);
+  }
+  #faq-divider-bottom {
+    fill: var(--accent);
+  }
+  .font-color {
+    color: white !important;
+  }
+  .font-color a {
+    color: white !important;
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: white;
+  text-decoration: none !important;
+  text-decoration-color: white !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
