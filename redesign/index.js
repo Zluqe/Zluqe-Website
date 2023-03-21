@@ -7,11 +7,38 @@ const isScrolling = () => {
     
 }
 window.addEventListener('scroll', isScrolling)
+let btntotop = document.getElementById("btn-back-to-top");
 
+// When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    btntotop.style.display = "block";
+  } else {
+    btntotop.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+btntotop.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+//--------------------------
 // Agentseed's theme changer
-const root = document.documentElement
-var theme = localStorage.getItem("theme");
-if(theme == 'dark') {
+//--------------------------
+var theme = localStorage.getItem("theme"); // sets theme to whatever's in localstorage under "theme", defaults to dark
+var stylesheet = document.getElementsByTagName('link')[0]; // gets the first link element (should be the site stylesheet)
+if(theme == 'dark') { 
     setThemeDark();
 } else if (theme == 'light'){
     setThemeLight();
@@ -24,12 +51,12 @@ function changeTheme() {
     }
 }
 function setThemeDark() {
-    root.style.setProperty('--background', 'url(dark.png)');
-    localStorage.setItem("theme", "dark");
-    theme = 'dark';
+    stylesheet.setAttribute('href', 'dark.css') // sets the stylesheet to dark.css
+    localStorage.setItem("theme", "dark"); // sets the localstorage element "theme" to dark
+    theme = 'dark'; // sets theme to dark
 }
 function setThemeLight() {
-    root.style.setProperty('--background', 'url(light.png)');
-    localStorage.setItem("theme", "light")
-    theme = 'light';
+    stylesheet.setAttribute('href', 'light.css') //TODO: make a light theme stylesheet
+    localStorage.setItem("theme", "light") // sets the localstorage element "theme" to light
+    theme = 'light'; // sets theme to light
 }
