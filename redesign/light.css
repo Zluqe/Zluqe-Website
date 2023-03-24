@@ -1,5 +1,6 @@
 :root {
     --accent: #6B1295;
+    --accent-dark:#560e77;
   }
   * {
       margin: 0;
@@ -245,14 +246,13 @@
     .testimonials .card {
       background-color: #313131 !important; 
       border: none;
-      border-bottom: 3px #560e77 solid !important;
+      border-bottom: 3px var(--accent-dark) solid !important;
       transition: 0.5s;
       margin-top: 60px;
-      color: white;
     }
     .testimonials .card i {
-      background-color: var(--accent);
-      color: #fff !important;
+      background-color: var(--accent-dark);
+      color: #ffffff;
       width: 75px;
       height: 75px;
       line-height: 75px;
@@ -261,13 +261,68 @@
     #btn-back-to-top {
       border-radius: 100% !important;
       color:white;
-      background-color: #560e77 !important;
+      background-color: var(--accent-dark) !important;
       position: fixed;
       bottom: 20px;
       right: 20px;
       transition: all 0.5s;
       display: none;
       z-index: 99999;
+    }
+    #btn-back-to-top:hover {
+      background-color: var(--accent) !important;
+    }
+    .price-row{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 25px;
+    }
+    .price-col{
+      background-color: var(--accent);
+      padding:10% 15%;
+      border-radius: 10px;
+      transition: all 0.5s;
+    }
+    .price-col h3{
+      font-size: 5rem;
+      font-weight: bold;
+    }
+    .price-col h3 span{
+      font-size: 2rem;
+      font-weight: normal;
+    }
+    .price-col ul{
+      text-align:left;
+      margin:20px 0;
+    }
+    .price-col ul li{
+      margin:15px 0 ;
+      list-style: none;
+    }
+    .price-col:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .price-col ul li::before{
+      content: "\2022";
+      color: #e33058;
+      font-weight: bold;
+      margin-right:8px;
+    }
+    .price-col button{
+      border: 1.5px solid var(--accent-dark);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.5s;
+      background-color: var(--accent);
+    }
+    .price-col button:hover{
+      background-color: var(--accent-dark);
     }
     #top-divider {
       fill: white /* testing */;
@@ -286,6 +341,9 @@
     }
     .font-color a {
         color: black !important;
+    }
+    .font-color-white {
+      color: white;
     }
     .material-symbols-outlined {
       font-variation-settings:
