@@ -1,4 +1,4 @@
-/*TODO: copy everything from here into both light.css and dark.css */
+/*TODO: copy everything from here into both light.css and dark.css, ooooor make only color sensitive parts in dark and light stylesheets? */
 .base-fontsize {
     font-size: 14pt;
 }
@@ -10,4 +10,7 @@ p, li, a {
 }
 a.logo.navbar-brand p {
     font-size: 20pt;
+}
+.hero {
+font-family: 'Orbitron', sans-serif;
 }
