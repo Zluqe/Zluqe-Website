@@ -298,4 +298,18 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  
+  .base-fontsize {
+    font-size: 14pt;
+}
+body {
+    font-size: 14pt;
+}
+p, li, a {
+    font-size: 14pt;
+}
+a.logo.navbar-brand p {
+    font-size: 20pt;
+}
+.hero {
+font-family: 'Orbitron', sans-serif;
+}
