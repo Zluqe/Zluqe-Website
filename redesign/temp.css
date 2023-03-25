@@ -1,0 +1,13 @@
+/*TODO: copy everything from here into both light.css and dark.css */
+.base-fontsize {
+    font-size: 14pt;
+}
+body {
+    font-size: 14pt;
+}
+p, li, a {
+    font-size: 14pt;
+}
+a.logo.navbar-brand p {
+    font-size: 20pt;
+}

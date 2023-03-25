@@ -188,7 +188,7 @@ header.active .button:hover {
   color: white;
 }
 #faq-container {
-  transform: translateY(-30%);
+  transform: translateY(-20%);
 }
 /* these two are really important, if you remove them there's these really annoying 1px gaps for some strange reason */
 #faq-divider-top {
