@@ -108,8 +108,12 @@
         color: black !important;
     }
     .font-color-white {
-      color: white;
+      color: white !important;
     }
+    .font-color-white p, .font-color-white a, .font-color-white h5 {
+      color: white !important;
+    }
+
     .material-symbols-outlined {
       color: white;
       text-decoration-color: white !important;

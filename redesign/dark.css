@@ -109,7 +109,10 @@ header.active .button:hover {
     color: white !important;
   }
   .font-color-white {
-    color: white;
+    color: white !important;
+  }
+  .font-color-white a {
+    color: white !important;
   }
 .material-symbols-outlined {
   color: white;

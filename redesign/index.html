@@ -15,15 +15,14 @@
   <link rel="manifest" href="https://panel.zluqe.com/favicons/manifest.json">
   <link rel="mask-icon" href="https://panel.zluqe.com/favicons/safari-pinned-tab.svg" color="#bc6e3c">
   <link rel="shortcut icon" href="https://panel.zluqe.com/favicons/favicon.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <title>Zluqe | Free bot hosting</title>
 </head>
 <body>
   <button type="button" class="btn shadow rounded-circle-floating btn-lg" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
+  </button>
+  <button type="button" class="btn shadow rounded-circle-floating btn-lg" id="theme">
+    <i class="fas fa-cloud-sun" onclick="changeTheme()"></i>
   </button>
   <header class="primary-header">
     <nav class="navbar navbar-dark container navbar-expand-lg">
@@ -38,7 +37,6 @@
           <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li> 
           <li class="nav-item"><a href="https://discord.gg/D8rjRN3uJQ" class="nav-link">Discord</a></li>
         </ul>
-        <span onclick="changeTheme()" class="material-symbols-outlined">routine</span>&nbsp;
         <a href="https://panel.zluqe.com" class="d-flex button" style="text-decoration: none;">Get Started</a>&nbsp;
       </div> 
     </nav>
@@ -193,7 +191,7 @@
   </div>
   <svg id="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,160L21.8,133.3C43.6,107,87,53,131,58.7C174.5,64,218,128,262,154.7C305.5,181,349,171,393,186.7C436.4,203,480,245,524,250.7C567.3,256,611,224,655,176C698.2,128,742,64,785,53.3C829.1,43,873,85,916,106.7C960,128,1004,128,1047,117.3C1090.9,107,1135,85,1178,96C1221.8,107,1265,149,1309,154.7C1352.7,160,1396,128,1418,112L1440,96L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z" style="--darkreader-inline-fill: #6B1295;" data-darkreader-inline-fill=""></path></svg>
   <div id="footer-container">
-    <div class="container font-color"  id="footer">
+    <div class="container font-color-white"  id="footer">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
           <p>&copy; Zluqe 2023 | All Rights Reserved</p>
@@ -232,5 +230,7 @@
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://kit.fontawesome.com/3dd1a4167f.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

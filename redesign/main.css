@@ -129,7 +129,7 @@
   #hero-content {
     transform: translate(-50%, -50%);
     position: absolute;
-    margin-top: 25%;
+    margin-top: 50rem;
     margin-left: 50%;
   }
   #hero-button {
@@ -255,6 +255,17 @@
     }
     #btn-back-to-top:hover {
       background-color: var(--accent) !important;
+    }
+    #theme {
+      border-radius: 100% !important;
+      color:white;
+      background-color: var(--accent-dark) !important;
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      transition: all 0.5s;
+      display: block;
+      z-index: 99999;
     }
     .price-row{
       width:90%;
