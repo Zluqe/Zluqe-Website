@@ -1,6 +1,7 @@
 :root {
     --accent: #6B1295;
     --accent-dark:#560e77;
+    --background: #fff;
   }
   body {
       font-size: 1.4rem;
@@ -28,19 +29,27 @@
     color: #fff;
   }
   .active {
-    background-color: #000;
+    background-color: var(--background);
+    color: black;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  }
+  .primary-header.active {
+    background-color: var(--background);
+  }
+  #navbarNav.active {
+    background-color: var(--background);
+    box-shadow: none;
   }
   header.active .logo,
   header.active .nav-link {
-    color: #fff;
+    color: #000;
   }
   header.active .nav-link:hover {
     color: #808080;
   }
-  header.active .button {
-    color: #313131;
-    background-color: #fff;
+  header.active .button { 
+    color: #fff;
+    background-color: #000;
   }
   header.active .button:hover {
     background-color: var(--accent);
