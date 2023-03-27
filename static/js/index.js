@@ -32,6 +32,12 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+function googleTranslateElementInit() {  
+  new google.translate.TranslateElement(  
+      {pageLanguage: 'en'},  
+      'google_translate_element'  
+  );  
+} 
 
 //--------------------------
 // Agentseed's theme changer
@@ -56,7 +62,7 @@ function setThemeDark() {
     theme = 'dark'; // sets theme to dark
 }
 function setThemeLight() {
-    stylesheet.setAttribute('href', 'light.css') //TODO: make a light theme stylesheet
+    stylesheet.setAttribute('href', 'light.css')
     localStorage.setItem("theme", "light") // sets the localstorage element "theme" to light
     theme = 'light'; // sets theme to light
 }

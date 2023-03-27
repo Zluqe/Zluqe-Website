@@ -4,7 +4,7 @@
 }
 body {
     color: #fff;
-    background: #151515 !important;
+    background-color: #151515 !important;
 }
 a {
     text-decoration: none;
@@ -109,7 +109,10 @@ header.active .button:hover {
     color: white !important;
   }
   .font-color-white {
-    color: white;
+    color: white !important;
+  }
+  .font-color-white a {
+    color: white !important;
   }
 .material-symbols-outlined {
   color: white;
