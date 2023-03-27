@@ -9,7 +9,7 @@ app = Flask(__name__, static_folder='static', template_folder='views')
 # Render Templates / HTML's
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('main/index.html')
 
 
 # Redirects
@@ -42,6 +42,11 @@ def zluqe_terms(path):
 @app.route('/privacy-policy', defaults={'path': ''})
 def zluqe_pp(path):
     return send_from_directory(os.path.join('static', 'misc'), 'privacy-policy.pdf', as_attachment=False)
+
+# errors
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('errors/404.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
