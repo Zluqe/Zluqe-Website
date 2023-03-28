@@ -42,27 +42,33 @@ function googleTranslateElementInit() {
 //--------------------------
 // Agentseed's theme changer
 //--------------------------
-var theme = localStorage.getItem("theme"); // sets theme to whatever's in localstorage under "theme", defaults to dark
+var theme = localStorage.getItem("theme");
 var stylesheet = document.getElementsByTagName('link')[0]; // gets the first link element (should be the site stylesheet)
-if(theme == 'dark') { 
-    setThemeDark();
+if (theme != 'dark' && theme != 'light') {
+  localStorage.setItem("theme", "dark");
+  theme = localStorage.getItem("theme");
+} else {
+  theme = localStorage.getItem("theme");
+}
+if(theme == 'dark') {
+  setThemeDark();
 } else if (theme == 'light'){
-    setThemeLight();
+  setThemeLight();
 }
 function changeTheme() {
-    if (theme == 'dark') {
-        setThemeLight();
-    } else if (theme == 'light') {
-        setThemeDark();
-    }
+  if (theme == 'dark') {
+      setThemeLight();
+  } else if (theme == 'light') {
+      setThemeDark();
+  }
 }
 function setThemeDark() {
-    stylesheet.setAttribute('href', 'dark.css') // sets the stylesheet to dark.css
+  stylesheet.setAttribute('href', "/static/css/dark.css")
     localStorage.setItem("theme", "dark"); // sets the localstorage element "theme" to dark
     theme = 'dark'; // sets theme to dark
 }
 function setThemeLight() {
-    stylesheet.setAttribute('href', 'light.css')
+    stylesheet.setAttribute('href', "/static/css/light.css")
     localStorage.setItem("theme", "light") // sets the localstorage element "theme" to light
     theme = 'light'; // sets theme to light
 }
