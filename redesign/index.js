@@ -25,7 +25,7 @@ if (
 }
 }
 // When the user clicks on the button, scroll to the top of the document
-btntotop.addEventListener("click", backToTop);
+btntotop.addEventListener("click", backToTop();
 
 function backToTop() {
 document.body.scrollTop = 0;
