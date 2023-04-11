@@ -11,6 +11,9 @@ app = Flask(__name__, static_folder='static', template_folder='views')
 def index():
     return render_template('main/index.html')
 
+@app.route('/staff')
+def staff():
+    return render_template('main/staff.html')
 
 # Redirects
 @app.route('/discord')
@@ -49,4 +52,4 @@ def page_not_found(e):
     return render_template('errors/404.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=config.PORT, debug=config.DEBUG)
