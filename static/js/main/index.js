@@ -63,12 +63,12 @@ function changeTheme() {
   }
 }
 function setThemeDark() {
-  stylesheet.setAttribute('href', "/static/css/dark.css")
+  stylesheet.setAttribute('href', "/static/css/main/dark.css")
     localStorage.setItem("theme", "dark"); // sets the localstorage element "theme" to dark
     theme = 'dark'; // sets theme to dark
 }
 function setThemeLight() {
-    stylesheet.setAttribute('href', "/static/css/light.css")
+    stylesheet.setAttribute('href', "/static/css/main/light.css")
     localStorage.setItem("theme", "light") // sets the localstorage element "theme" to light
     theme = 'light'; // sets theme to light
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#6B1295" /> <!-- for discord embeds and such, ignore compatibility warnings-->
+  <link rel="stylesheet" href="/static/css/main/dark.css"> <!-- this always has to be the first stylesheet specified-->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main/dark.css') }}"> <!-- this always has to be the first stylesheet specified-->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main/main.css') }}"> <!-- this is all the actual code, the above one is for themes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
@@ -219,12 +220,12 @@ function changeTheme() {
   }
 }
 function setThemeDark() {
-stylesheet.setAttribute('href', "static/css/dark.css")
+stylesheet.setAttribute('href', "/static/css/main/dark.css")
   localStorage.setItem("theme", "dark"); // sets the localstorage element "theme" to dark
   theme = 'dark'; // sets theme to dark
 }
 function setThemeLight() {
-  stylesheet.setAttribute('href', "static/css/light.css")
+  stylesheet.setAttribute('href', "/static/css/main/light.css")
   localStorage.setItem("theme", "light") // sets the localstorage element "theme" to light
   theme = 'light'; // sets theme to light
 }
