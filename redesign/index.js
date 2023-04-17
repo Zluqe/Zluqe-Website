@@ -24,13 +24,16 @@ if (
   btntotop.style.display = "none";
 }
 }
-// When the user clicks on the button, scroll to the top of the document
-btntotop.addEventListener("click", backToTop();
 
 function backToTop() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  }
+
+// When the user clicks on the button, scroll to the top of the document
+btntotop.addEventListener("click", backToTop);
+
+
 
 function googleTranslateElementInit() {  
 new google.translate.TranslateElement(  
