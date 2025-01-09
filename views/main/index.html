@@ -126,7 +126,9 @@
           features and a community-focused support, it's designed to put the
           user first. Try it now and elevate your Discord experience.
         </p>
-        <button class="button" id="hero-button">Get Started Now!</button>
+
+        <a href="/panel" class="button" id="hero-button">Get Started Now!</a>
+      
       </div>
     </div>
     <svg
@@ -305,25 +307,17 @@
         </div>
       </div>
     </div>
-
+    <!-- Testimonials Section Improvements -->
     <div class="testimonials text-center font-color-white" id="reviews">
       <div class="container">
         <h3 class="display-1">Testimonials</h3>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
+        <div class="testimonial-grid">
+          <div class="testimonial-item">
             <div class="card border-light bg-light text-center">
-              <i
-                class="fa fa-quote-left fa-3x card-img-top rounded-circle"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-quote-left fa-2x card-img-top rounded-circle" aria-hidden="true"></i>
               <div class="card-body blockquote">
                 <p class="card-text">
-                  A great free discord bot hosting company, their support is a
-                  really good and fast. Even though sometimes it may take longer
-                  they always help me figure out my issue and are always really
-                  friendly to me. I really love this host and admire them
-                  providing free hosting for absolutely no catch. Which you
-                  don't see nowadays! Thank you Zluqe!
+                  A great free discord bot hosting company, their support is really good and fast. Even though sometimes it may take longer they always help me figure out my issue and are always really friendly. I admire them providing free hosting for absolutely no catch. Thank you Zluqe!
                 </p>
                 <footer class="blockquote-footer">
                   <cite title="Source Title">Blummerss</cite>
@@ -331,25 +325,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="testimonial-item">
             <div class="card border-light bg-light text-center">
-              <i
-                class="fa fa-quote-left fa-3x card-img-top rounded-circle"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-quote-left fa-2x card-img-top rounded-circle" aria-hidden="true"></i>
               <div class="card-body blockquote">
                 <p class="card-text">
-                  Zluqe is a reliable and affordable bot hosting service that
-                  provides high-quality servers for hosting Discord bots. Their
-                  servers are fast, reliable, and offer excellent uptime,
-                  ensuring that your bot is always online and ready to serve
-                  your community. With their user-friendly control panel, it's
-                  easy to manage your server, install software, and deploy your
-                  bot with just a few clicks. They also offer great customer
-                  support, with a knowledgeable and friendly team always
-                  available to assist you with any questions or issues you may
-                  have. Overall, Zluqe is a great choice for anyone looking for
-                  a dependable and affordable bot hosting solution.
+                  Zluqe is a reliable and affordable bot hosting service that provides high-quality servers. Their servers are fast, reliable, and offer excellent uptime. The user-friendly control panel makes managing your bot easy. Support is always available and helpful.
                 </p>
                 <footer class="blockquote-footer">
                   <cite title="Source Title">cryart</cite>
@@ -357,17 +338,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="testimonial-item">
             <div class="card border-light bg-light text-center">
-              <i
-                class="fa fa-quote-left fa-3x card-img-top rounded-circle"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-quote-left fa-2x card-img-top rounded-circle" aria-hidden="true"></i>
               <div class="card-body blockquote">
                 <p class="card-text">
-                  A free discord bot host that served me well, its free low
-                  latency and overall just a great experience 10/10 would
-                  recommend
+                  A free discord bot host that served me well, its free low latency and overall just a great experience. 10/10 would recommend.
                 </p>
                 <footer class="blockquote-footer">
                   <cite title="Source Title">Vien Dev</cite>
@@ -378,6 +354,54 @@
         </div>
       </div>
     </div>
+
+    <!-- Style Improvements -->
+    <style>
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .testimonial-item {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      .testimonial-item .card {
+        width: 100%;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 1.8rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .testimonial-item .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .testimonial-item .card p {
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        line-height: 1.6;
+        color: #f0f0f0;
+      }
+
+      .testimonial-item .card i {
+        font-size: 2.5rem;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+
+      .testimonial-item .card footer {
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        color: #ddd;
+      }
+    </style>
     <svg
       id="footer-wave"
       xmlns="http://www.w3.org/2000/svg"
