@@ -11,10 +11,6 @@ app = Flask(__name__, static_folder='static', template_folder='views')
 def index():
     return render_template('main/index.html')
 
-@app.route('/staff')
-def staff():
-    return render_template('main/staff.html')
-
 # Redirects
 @app.route('/discord')
 def discord_invite():
